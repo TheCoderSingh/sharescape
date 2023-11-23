@@ -61,13 +61,13 @@ const Signup = () => {
       <Flex vertical className="forgot">
         <ul>
           <li>
-            <Link href="">
+            <Link href="/forgot">
               Forgot your <span>username/password?</span>
             </Link>
           </li>
           <li>
-            <Link href="">
-              Don&apos;t have an account? <span>Signup</span>
+            <Link href="/login">
+              Already have an account? <span>Login</span>
             </Link>
           </li>
         </ul>
