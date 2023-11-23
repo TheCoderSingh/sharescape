@@ -1,0 +1,80 @@
+.signup {
+  max-width: 30%;
+  height: calc(100vh - 20px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup h1 {
+  text-align: center;
+}
+
+.signup h1 span {
+  color: #219ebc;
+}
+
+.signup-form {
+  margin-top: 20px;
+}
+
+.signup input {
+  border-width: 0 0 1px 0;
+  border-radius: 0%;
+}
+
+.signup button {
+  width: 100%;
+  background: #219ebc;
+  color: #fff;
+  border: none;
+}
+
+.input::placeholder {
+  color: #ccc;
+}
+
+.forgot {
+  margin-top: 20px;
+}
+
+.forgot a {
+  color: #888;
+}
+
+.forgot a span {
+  color: #219ebc;
+}
+
+.forgot ul {
+  list-style: none;
+}
+
+.forgot ul li {
+  line-height: 1.3em;
+}
+
+.forgot ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #219ebc; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.signup-socials {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.divider {
+  min-width: unset;
+  width: 45%;
+}
+.divider-text {
+  align-self: center;
+}
+.divider-text span {
+  word-break: normal;
+  color: #219ebc;
+}
