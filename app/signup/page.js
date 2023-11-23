@@ -32,13 +32,13 @@ const Signup = () => {
           <Input placeholder="Username" />
         </Form.Item>
         <Form.Item name="email">
-          <Input placeholder="Email" />
+          <Input type="email" placeholder="Email" />
         </Form.Item>
         <Form.Item name="password">
-          <Input placeholder="Password" />
+          <Input type="password" placeholder="Password" />
         </Form.Item>
         <Form.Item name="confirm">
-          <Input placeholder="Confirm Password" />
+          <Input type="password" placeholder="Confirm Password" />
         </Form.Item>
         <Button>Signup</Button>
       </Form>

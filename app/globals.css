@@ -22,11 +22,24 @@
   border-radius: 0%;
 }
 
+.signup input:focus {
+  box-shadow: none;
+}
+
 .signup button {
   width: 100%;
   background: #219ebc;
   color: #fff;
   border: none;
+  transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.signup button:hover {
+  background: #023047;
+}
+
+.signup button:hover span {
+  color: #fff;
 }
 
 .input::placeholder {
@@ -54,12 +67,12 @@
 }
 
 .forgot ul li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #219ebc; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
+  content: "\2022";
+  color: #219ebc;
+  font-weight: bold;
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  width: 1em; /* Also needed for space */
+  margin-left: -1em; /* Also needed for space */
 }
 
 .signup-socials {
@@ -77,4 +90,41 @@
 .divider-text span {
   word-break: normal;
   color: #219ebc;
+}
+
+@media screen and (max-width: 1400px) {
+  .signup {
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .signup {
+    max-width: 60%;
+  }
+
+  .signup h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signup {
+    max-width: 80%;
+  }
+
+  .signup h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .signup {
+    justify-content: start;
+    margin-top: 80px;
+  }
+
+  .signup h1 {
+    font-size: 1.8em;
+  }
 }
