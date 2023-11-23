@@ -3,6 +3,7 @@ import { Button, Col, Divider, Flex, Form, Input, Row, Typography } from "antd";
 import Link from "next/link";
 
 import "../globals.css";
+import { GoogleLogin } from "@react-oauth/google";
 
 const { Text, Title } = Typography;
 
@@ -11,6 +12,13 @@ const { Text, Title } = Typography;
  * @returns {JSX.Element} The Signup component JSX
  */
 const Signup = () => {
+  const responseMessage = (response) => {
+    console.log(response);
+  };
+  const errorMessage = (error) => {
+    console.log(error);
+  };
+
   return (
     <Flex className="signup" vertical justify="center">
       <Typography>
@@ -44,7 +52,7 @@ const Signup = () => {
           <Divider className="divider" />
         </Flex>
         <Flex>
-          <Link href="">G</Link>
+          <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
           <Link href="">F</Link>
           <Link href="">X</Link>
         </Flex>
