@@ -138,6 +138,19 @@
   color: #219ebc;
 }
 
+.header {
+  padding: 10px 20px 10px 20px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #219ebc;
+}
+
+.header a {
+  color: #023047;
+}
+
 @media screen and (max-width: 1400px) {
   .signup,
   .login {
