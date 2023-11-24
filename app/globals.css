@@ -11,7 +11,8 @@
 
 .signup h1,
 .login h1,
-.forgot h4 {
+.forgot h4,
+.success h4 {
   text-align: center;
 }
 
