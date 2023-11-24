@@ -19,10 +19,10 @@ const Success = () => {
 
       <Form name="success" className="success-form">
         <Form.Item name="new-password">
-          <Input placeholder="New Password" />
+          <Input type="password" placeholder="New Password" />
         </Form.Item>
         <Form.Item name="confirm-new-password">
-          <Input placeholder="Confirm New Password" />
+          <Input type="password" placeholder="Confirm New Password" />
         </Form.Item>
         <Button>Submit</Button>
       </Form>
