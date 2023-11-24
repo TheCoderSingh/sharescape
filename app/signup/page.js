@@ -43,7 +43,7 @@ const Signup = () => {
         <Button>Signup</Button>
       </Form>
 
-      <div className="signup-socials">
+      <div className="socials">
         <Flex justify="space-between">
           <Divider className="divider" />
           <Typography className="divider-text">
@@ -58,20 +58,11 @@ const Signup = () => {
         </Flex>
       </div>
 
-      <Flex vertical className="forgot">
-        <ul>
-          <li>
-            <Link href="/forgot">
-              Forgot your <span>username/password?</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/login">
-              Already have an account? <span>Login</span>
-            </Link>
-          </li>
-        </ul>
-      </Flex>
+      <div className="bottom-links">
+        <Link href="/login">
+          Already have an account? <span>Login</span>
+        </Link>
+      </div>
     </Flex>
   );
 };

@@ -1,32 +1,39 @@
-.signup {
+.signup,
+.login {
   max-width: 30%;
   height: calc(100vh - 20px);
   margin-left: auto;
   margin-right: auto;
 }
 
-.signup h1 {
+.signup h1,
+.login h1 {
   text-align: center;
 }
 
-.signup h1 span {
+.signup h1 span,
+.login h1 span {
   color: #219ebc;
 }
 
-.signup-form {
+.signup-form,
+.login-form {
   margin-top: 20px;
 }
 
-.signup input {
+.signup input,
+.login input {
   border-width: 0 0 1px 0;
   border-radius: 0%;
 }
 
-.signup input:focus {
+.signup input:focus,
+.login input:focus {
   box-shadow: none;
 }
 
-.signup button {
+.signup button,
+.login button {
   width: 100%;
   background: #219ebc;
   color: #fff;
@@ -34,11 +41,13 @@
   transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.signup button:hover {
+.signup button:hover,
+.login button:hover {
   background: #023047;
 }
 
-.signup button:hover span {
+.signup button:hover span,
+.login button:hover span {
   color: #fff;
 }
 
@@ -46,27 +55,31 @@
   color: #ccc;
 }
 
-.forgot {
+.signup .bottom-links {
+  text-align: center;
+}
+
+.bottom-links {
   margin-top: 20px;
 }
 
-.forgot a {
+.bottom-links a {
   color: #888;
 }
 
-.forgot a span {
+.bottom-links a span {
   color: #219ebc;
 }
 
-.forgot ul {
+.bottom-links ul {
   list-style: none;
 }
 
-.forgot ul li {
+.bottom-links ul li {
   line-height: 1.3em;
 }
 
-.forgot ul li::before {
+.bottom-links ul li::before {
   content: "\2022";
   color: #219ebc;
   font-weight: bold;
@@ -75,7 +88,7 @@
   margin-left: -1em; /* Also needed for space */
 }
 
-.signup-socials {
+.socials {
   text-align: center;
   margin-top: 20px;
 }
@@ -93,38 +106,45 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .signup {
+  .signup,
+  .login {
     max-width: 40%;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .signup {
+  .signup,
+  .login {
     max-width: 60%;
   }
 
-  .signup h1 {
+  .signup h1,
+  .login h1 {
     font-size: 1.8em;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .signup {
+  .signup,
+  .login {
     max-width: 80%;
   }
 
-  .signup h1 {
+  .signup h1,
+  .login h1 {
     font-size: 2.5em;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .signup {
+  .signup,
+  .login {
     justify-content: start;
     margin-top: 80px;
   }
 
-  .signup h1 {
+  .signup h1,
+  .login h1 {
     font-size: 1.8em;
   }
 }
