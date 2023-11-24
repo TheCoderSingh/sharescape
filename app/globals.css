@@ -176,6 +176,7 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .profile-picture img {
@@ -242,6 +243,47 @@
 
 .personal-details {
   width: 40%;
+}
+
+.profile-left-bottom {
+  margin: 40px auto 0 auto;
+  width: 80%;
+}
+
+.profile-btn {
+  border-radius: 0;
+  border: none;
+  transition: background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.profile-btn-left:hover span {
+  color: #fff;
+}
+
+.profile-btn-right:hover span {
+  color: #000;
+}
+
+.profile-btn-left {
+  background: #219ebc;
+  width: 70%;
+  color: #fff;
+}
+
+.profile-btn span {
+  font-size: 0.9em;
+}
+
+.profile-btn-right {
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  border-color: #219ebc;
+  width: 30%;
+}
+
+.change-picture span {
+  color: #888;
+  font-size: 0.9em;
 }
 
 @media screen and (max-width: 1400px) {

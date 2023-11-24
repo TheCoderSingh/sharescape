@@ -1,10 +1,11 @@
 "use client";
-import { Col, Divider, Flex, Row, Typography } from "antd";
+import { Button, Col, Divider, Flex, Row, Typography } from "antd";
 import Header from "../components/Header";
 import ProfilePicture from "../assets/profile.jpeg";
 import Image from "next/image";
 import MiniBuddy from "../components/MiniBuddy";
 import { FaLocationDot } from "react-icons/fa6";
+import { MdTravelExplore } from "react-icons/md";
 
 const { Text, Title } = Typography;
 
@@ -17,8 +18,11 @@ const Profile = () => {
         <div className="profile-left">
           <div className="profile-picture">
             <Image src={ProfilePicture} alt="Profile" />
+            <Typography className="change-picture">
+              <Text>Change Picture</Text>
+            </Typography>
           </div>
-          <div className="profile-header">
+          {/* <div className="profile-header">
             <Divider className="header-divider" orientation="left">
               <Typography>
                 <Text>BUDDIES</Text>
@@ -48,7 +52,21 @@ const Profile = () => {
                 </Col>
               </Row>
             </div>
-          </div>
+          </div> */}
+          <Flex className="profile-left-bottom" gap={10} vertical>
+            <Flex justify="center">
+              <Button className="profile-btn profile-btn-left">
+                MY BUDDIES
+              </Button>
+              <Button className="profile-btn profile-btn-right">234</Button>
+            </Flex>
+            <Flex justify="center">
+              <Button className="profile-btn profile-btn-left">
+                MY ACTIVITIES
+              </Button>
+              <Button className="profile-btn profile-btn-right">7</Button>
+            </Flex>
+          </Flex>
         </div>
         <div className="profile-right">
           <div className="profile-details">
