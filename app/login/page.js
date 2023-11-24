@@ -52,19 +52,18 @@ const Login = () => {
         </Flex>
       </div>
 
-      <Flex vertical className="bottom-links">
-        <ul>
-          <li>
+      <Flex className="bottom-links">
+        <Typography>
+          <Text>
             <Link href="/forgot">
-              Forgot your <span>username/password?</span>
+              <span>Forgot username or password</span>
             </Link>
-          </li>
-          <li>
+            ? | Don&apos;t have an account?{" "}
             <Link href="/signup">
-              Don&apos;t have an account? <span>Signup</span>
+              <span>Signup</span>
             </Link>
-          </li>
-        </ul>
+          </Text>
+        </Typography>
       </Flex>
     </Flex>
   );
