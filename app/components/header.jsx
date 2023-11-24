@@ -8,7 +8,7 @@ import "../globals.css";
 const Header = () => {
   return (
     <div className="header">
-      <Flex justify="space-between">
+      <Flex justify="space-between" className="inner">
         <Typography>
           <Title level={2}>Sharescape</Title>
         </Typography>
