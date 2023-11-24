@@ -1,6 +1,6 @@
 "use client";
 import { Button, Col, Divider, Flex, Row, Typography } from "antd";
-import Header from "../components/Header";
+import Header from "../components/header";
 import ProfilePicture from "../assets/profile.jpeg";
 import Image from "next/image";
 import MiniBuddy from "../components/MiniBuddy";
