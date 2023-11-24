@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import ProfilePicture from "../assets/profile.jpeg";
 import Image from "next/image";
 import MiniBuddy from "../components/MiniBuddy";
+import { FaLocationDot } from "react-icons/fa6";
 
 const { Text, Title } = Typography;
 
@@ -12,7 +13,7 @@ const Profile = () => {
     <div className="profile">
       <Header />
 
-      <Flex className="inner">
+      <Flex className="inner" gap={20}>
         <div className="profile-left">
           <div className="profile-picture">
             <Image src={ProfilePicture} alt="Profile" />
@@ -54,14 +55,17 @@ const Profile = () => {
             <Typography>
               <Title>Jaskaran Singh</Title>
             </Typography>
-            <Typography>
-              <Text>Vancouver, Canada</Text>
-            </Typography>
+            <Flex gap={2} align="center" className="location">
+              <FaLocationDot />
+              <Typography>
+                <Text>Vancouver, Canada</Text>
+              </Typography>
+            </Flex>
           </div>
           <div className="profile-about">
-            <Divider orientation="left">
+            <Divider orientation="left" className="about-divider">
               <Typography>
-                <Title level={4}>ABOUT</Title>
+                <Title level={5}>ABOUT</Title>
               </Typography>
             </Divider>
             <Typography>
@@ -77,12 +81,50 @@ const Profile = () => {
           </div>
 
           <div className="profile-bottom-details">
-            <Typography>
-              <Text>Birthday: January 1, 1993</Text>
-            </Typography>
-            <Typography>
-              <Text>Gender: Male</Text>
-            </Typography>
+            <Divider orientation="left" className="about-divider">
+              <Typography>
+                <Title level={5}>PERSONAL DETAILS</Title>
+              </Typography>
+            </Divider>
+
+            <div className="personal-details">
+              <Flex justify="space-between">
+                <div>
+                  <div>
+                    <Typography>
+                      <Text>Birthday</Text>
+                    </Typography>
+                  </div>
+                  <div>
+                    <Typography>
+                      <Text>Gender</Text>
+                    </Typography>
+                  </div>
+                  <div>
+                    <Typography>
+                      <Text>Relationship Status</Text>
+                    </Typography>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <Typography>
+                      <Text>January 3, 1992</Text>
+                    </Typography>
+                  </div>
+                  <div>
+                    <Typography>
+                      <Text>Male</Text>
+                    </Typography>
+                  </div>
+                  <div>
+                    <Typography>
+                      <Text>Single</Text>
+                    </Typography>
+                  </div>
+                </div>
+              </Flex>
+            </div>
           </div>
         </div>
       </Flex>

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Noto+Serif+Balinese&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
 .signup,
 .login,
 .forgot,
@@ -167,7 +173,9 @@
 }
 
 .profile-picture {
-  width: 50%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .profile-picture img {
@@ -188,6 +196,12 @@
   color: #023047;
 }
 
+.profile-details h1 {
+  color: #219ebc;
+  margin: 0;
+  font-family: "Noto Serif Balinese", serif !important;
+}
+
 .header-divider span {
   padding-inline: 0 !important;
 }
@@ -204,6 +218,30 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
+}
+
+.location,
+.location span {
+  color: #888;
+}
+
+.profile-about h5,
+.profile-bottom-details h5 {
+  margin: 0;
+  color: #888;
+}
+
+.profile-about {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.about-divider {
+  border-block-start: 0 #888 !important;
+}
+
+.personal-details {
+  width: 40%;
 }
 
 @media screen and (max-width: 1400px) {
